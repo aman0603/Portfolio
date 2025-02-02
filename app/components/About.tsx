@@ -1,18 +1,26 @@
-import Image from "next/image"
+"use client"
 
+import Image from "next/image"
+import { motion } from "framer-motion";
 const About = () => {
   return (
     <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 px-4">
       <div className="md:w-1/3 flex justify-center">
-        <div className="relative w-[250px] h-[250px] md:w-[300px] md:h-[300px]">
-          <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-xm1Q7UPFIp0BAQryG0Tv5V8uE52TZv.png"
-            alt="Aman Paswan"
-            width={300} 
-            height={300} 
-            className="rounded-lg object-cover w-full h-full"
-          />
-        </div>
+      <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      whileHover={{ scale: 1.2 , rotate: 2 }}
+      className="relative w-[250px] h-[250px] md:w-[300px] md:h-[300px] shadow-lg rounded-lg overflow-hidden"
+    >
+      <Image
+        src="my_img.jpg"
+        alt="Aman Paswan"
+        width={300}
+        height={300}
+        className="rounded-lg object-cover w-full h-full transition-all duration-500 ease-in-out"
+      />
+    </motion.div>
       </div>
       <div className="md:w-2/3 text-center md:text-left">
         <h2 className="text-2xl font-bold mb-2">About Me</h2>

@@ -16,10 +16,10 @@ const projectsData = {
     {
       title: "Portfolio Website",
       description: "A modern portfolio website with dark and light mode and animations",
-      imageUrl: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-qbTrrXP0EHWyVqXuZ67i9JGKuEwOdT.png",
-      demoUrl: "https://demo.example.com",
-      codeUrl: "https://github.com/example/repo",
-      technologies: ["Next.js", "Three.js"],
+      imageUrl: "portfolio.png",
+      demoUrl: "https://github.com/aman0603/Portfolio",
+      codeUrl: "https://github.com/aman0603/Portfolio",
+      technologies: ["Next.js", "Three.js", "Tailwind CSS"],
     },
   ],
   Fullstack: [
