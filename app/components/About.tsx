@@ -4,7 +4,7 @@ import Image from "next/image"
 import { motion } from "framer-motion";
 const About = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 px-4">
+    <div className="flex flex-col md:flex-row gap-4 md:gap-8 px-4">
       <div className="md:w-1/3 flex justify-center">
       <motion.div
       initial={{ opacity: 0, scale: 0.8 }}
@@ -22,8 +22,8 @@ const About = () => {
       />
     </motion.div>
       </div>
-      <div className="md:w-2/3 text-center md:text-left">
-        <h2 className="text-2xl font-bold mb-2">About Me</h2>
+      <div className="md:w-2/3 text-center md:text-left ">
+        
         <p className="text-lg mb-2">
           I'm a passionate full-stack developer with experience in building modern web applications. I love creating
           beautiful and functional user interfaces while ensuring robust backend implementations.
